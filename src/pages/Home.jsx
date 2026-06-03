@@ -1,45 +1,11 @@
 import React from 'react';
+import Hero from '../components/Hero/Hero';
 
 const Home = () => {
   return (
     <>
-      <header className='header'>
-        <img
-          src='https://i.pinimg.com/1200x/82/25/f2/8225f2ad53231935ca181a7cd2a90f24.jpg'
-          alt='Company Logo'
-          width={70}
-          height={55}
-          loading='lazy'
-        />
-      </header>
-
-      <hr />
-
       <main className='main-content'>
-        {/* Hero Section */}
-        <section className='herosection'>
-          <h1>
-            Explore Our Solar System <br />
-            Through Data
-          </h1>
-
-          <p>
-            Understand the planets not just by name, but by measurable facts.
-            From size and mass to gravity and density, this page breaks down the
-            solar system in a clear, data-driven way.
-          </p>
-
-          <nav>
-            <a href='#table-section'>
-              <u>Explore the Data</u>
-            </a>
-            &nbsp;&nbsp;&nbsp;&nbsp;
-            <a href='#form-section'>
-              <u>Contact Us</u>
-            </a>
-          </nav>
-        </section>
-
+        <Hero />
         <hr />
 
         {/* Video Section */}

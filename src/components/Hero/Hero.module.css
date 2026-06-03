@@ -1,0 +1,49 @@
+.heroSection {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 50px;
+
+  background-color: #051540;
+}
+.heroSection h1 {
+  color: #ffffff;
+  font-size: 48px;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+.heroSection p {
+  color: #dddddd;
+  font-size: 18px;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+.heroSection nav {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.heroSection nav a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 18px;
+  padding: 20px;
+  border: 1px solid;
+  border-radius: 8px;
+  height: 44px;
+  width: 160.5px;
+}
+
+.heroSection nav a:hover {
+  color: #ff5733;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  background-color: #051540;
+  padding: 25px 50px;
+}

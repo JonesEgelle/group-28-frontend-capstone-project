@@ -1,0 +1,37 @@
+/* CSS Reset */
+
+/* Box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Improve text rendering */
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+table,
+th,
+td {
+  border: 1px solid;
+  padding: 8px;
+  text-align: center;
+  border-collapse: collapse;
+}
+
+body {
+  font-family: sans-serif;
+}
+caption {
+  font-weight: bold;
+  text-align: left;
+}
