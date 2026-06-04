@@ -1,0 +1,33 @@
+.factsSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  padding: 25px 80px;
+  gap: 64px;
+
+  background-color: #ffffff;
+}
+.factsSection h2 {
+  color: #164baf;
+  font-size: 32px;
+  font-weight: 600;
+}
+.factsSection p {
+  color: #0f2a44;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.factsSection nav {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  width: 904px;
+  gap: 24px;
+}

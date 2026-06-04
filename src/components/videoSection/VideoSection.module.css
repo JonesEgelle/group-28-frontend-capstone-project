@@ -1,0 +1,31 @@
+.videoSection {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+  align-items: center;
+  padding: 50px 50px;
+
+  background-color: #ffffff;
+}
+.videoSection h2 {
+  color: #164baf;
+  font-size: 32px;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+.videoSection p {
+  color: #0f2a44;
+  font-size: 18px;
+  font-weight: 400;
+}
+.videoSection span {
+  color: #1274a4;
+  font-size: 18px;
+
+  font-weight: 700;
+}
+.mainContent {
+  text-align: center;
+  width: 591px;
+}

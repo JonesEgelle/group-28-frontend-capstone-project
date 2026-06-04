@@ -1,0 +1,45 @@
+.planetSection {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  align-items: center;
+  padding: 20px 80px;
+
+  background-color: #f2f7ff;
+}
+.planetSection h2 {
+  color: #164baf;
+  font-size: 32px;
+
+  font-weight: 600;
+}
+.videoSection p {
+  color: #0f2a44;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.mainContent {
+  text-align: center;
+  width: 904px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+img {
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+figcaption {
+  color: black;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  background-color: #ffffff;
+  padding: 20px;
+  display: flex;
+  gap: 7px;
+  flex-direction: column;
+  border-bottom-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+}
