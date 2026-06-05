@@ -27,7 +27,7 @@ const ContactForm = () => {
             <div className={styles.formGrid}>
               <div className={styles.formGroup}>
                 <label className={styles.label} htmlFor='fname'>
-                  Full Name*
+                  Full Name<span>*</span>
                 </label>
                 <input
                   className={styles.input}
@@ -43,7 +43,7 @@ const ContactForm = () => {
 
               <div className={styles.formGroup}>
                 <label className={styles.label} htmlFor='email'>
-                  Email*
+                  Email<span>*</span>
                 </label>
                 <input
                   className={styles.input}
@@ -57,7 +57,7 @@ const ContactForm = () => {
 
               <div className={styles.formGroup}>
                 <label className={styles.label} htmlFor='pnumber'>
-                  Phone Number*
+                  Phone Number<span>*</span>
                 </label>
                 <input
                   className={styles.input}
@@ -73,7 +73,7 @@ const ContactForm = () => {
 
               <div className={styles.formGroup}>
                 <label className={styles.label} htmlFor='message'>
-                  Message*
+                  Message<span>*</span>
                 </label>
                 <textarea
                   className={styles.textarea}
@@ -87,11 +87,10 @@ const ContactForm = () => {
                 <p className={styles.helperText}>Maximum 100 characters.</p>
               </div>
             </div>
-
-            <button className={styles.submitBtn} type='submit'>
-              Submit
-            </button>
           </fieldset>
+          <button className={styles.submitBtn} type='submit'>
+            Submit
+          </button>
         </form>
       </section>
     </>

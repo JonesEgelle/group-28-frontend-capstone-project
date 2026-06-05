@@ -1,7 +1,19 @@
 import React from 'react';
 import styles from './Planet.module.css';
+import { PlanetCard } from './PlanetCard';
+
+import usePlanets from '../../hooks/usePlanets';
 
 const PlanetSection = () => {
+  const { planets, loading, error } = usePlanets();
+
+  if (loading) {
+    return <p>Loading planets...</p>;
+  }
+
+  if (error) {
+    return <p>Error: {error}</p>;
+  }
   return (
     <>
       {/* Planet Section */}
@@ -16,19 +28,11 @@ const PlanetSection = () => {
           </p>
         </div>
 
-        <figure>
-          <img
-            src='https://i.pinimg.com/1200x/f6/ac/54/f6ac54f64af086b9ad80aca667a221ce.jpg'
-            alt='Comparison of planets showing size differences'
-            width={387}
-            height={252}
-            loading='lazy'
-          />
-          <figcaption>
-            <p>Planet Name</p>
-            <p>Distance from Sun</p>
-          </figcaption>
-        </figure>
+        <div className={styles.planetGrid}>
+          {planets.map((planet) => (
+            <PlanetCard key={planet.planet} planet={planet} />
+          ))}
+        </div>
       </section>
     </>
   );

@@ -24,8 +24,6 @@ const Home = () => {
 
         {/* Contact Form */}
         <ContactForm />
-
-        <hr aria-hidden='true' />
       </main>
 
       {/* Footer */}

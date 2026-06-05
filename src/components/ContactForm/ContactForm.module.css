@@ -46,6 +46,7 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 1.75rem;
+  margin-bottom: 48px;
 }
 
 .formGroup {
@@ -103,6 +104,7 @@
   font-weight: 600;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  font-size: 18px;
 }
 
 .submitBtn:hover {
@@ -116,6 +118,7 @@
 @media (max-width: 768px) {
   .formGrid {
     grid-template-columns: 1fr;
+    margin-bottom: 10px;
   }
 
   .fullWidth {
@@ -128,5 +131,57 @@
 
   .submitBtn {
     width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  /* --- already have these, keep them --- */
+  .formGrid {
+    grid-template-columns: 1fr;
+  }
+  .fullWidth {
+    grid-column: span 1;
+  }
+  .submitBtn {
+    width: 100%;
+  }
+
+  /* --- add these --- */
+  .formSection {
+    padding: 40px 24px;
+    gap: 32px;
+  }
+
+  .formHeader {
+    width: 100%;
+    text-align: center;
+    gap: 16px;
+  }
+
+  .formSection h2 {
+    font-size: 28px;
+  }
+
+  .formSection p {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  .textarea {
+    resize: vertical;
+    min-height: 161px;
+  }
+
+  .input,
+  .select {
+    height: 56px;
+    font-size: 15px;
+  }
+  span {
+    color: #e51937;
+  }
+  .submitBtn {
+    min-width: unset; /* remove fixed 337px min-width */
+    padding: 16px 24px;
+    font-size: 16px;
   }
 }

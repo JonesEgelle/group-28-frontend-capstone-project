@@ -26,12 +26,17 @@ const Footer = () => {
         <hr />
 
         <section className={styles.tandc}>
-          <p>
-            &copy; 2026 Design by Amaka & Ifeoma. Built by ... All rights
-            reserved.
-          </p>
-          &nbsp;&nbsp;
-          <a href='#'>TSAcademy</a>
+          <div>
+            <p>
+              &copy; 2026 Design by <a href='https://amakandukwu.com/'>Amaka</a>
+              &nbsp;& &nbsp;
+              <a href='https://www.linkedin.com/in/ifeomaokocha/'>Ifeoma A</a>.
+              <br />
+              Built by Group 28. All rights reserved
+            </p>
+          </div>
+
+          <a href='https://tsacademyonline.com/'>TSAcademy</a>
         </section>
       </footer>
     </>
