@@ -1,115 +1,149 @@
 import React from 'react';
+import styles from './FactsSection.module.css';
 
 const FactsTable = () => {
   return (
     <>
-      <table>
-        <caption>
+      <table className={styles.tableContainer}>
+        <caption className={styles.tableTitle}>
           Data about the planets of our solar system (Planetary facts taken from
           NASA)
         </caption>
 
-        <thead>
-          <tr>
-            <th scope='col'>Category</th>
-            <th scope='col'>Type</th>
-            <th scope='col'>Name</th>
-            <th scope='col'>Mass (10²⁴ kg)</th>
-            <th scope='col'>Diameter (km)</th>
-            <th scope='col'>Density (kg/m³)</th>
-            <th scope='col'>Gravity (m/s²)</th>
+        <thead className={styles.tableHead}>
+          <tr className={styles.headerRow}>
+            <th className={styles.headerCell} scope='col' colSpan={2}></th>
+
+            <th className={styles.headerCell} scope='col'>
+              Name
+            </th>
+            <th className={styles.headerCell} scope='col'>
+              Mass (10 24kg)
+            </th>
+            <th className={styles.headerCell} scope='col'>
+              Diameter (km)
+            </th>
+            <th className={styles.headerCell} scope='col'>
+              Density (kg/m³)
+            </th>
+            <th className={styles.headerCell} scope='col'>
+              Gravity (m/s²)
+            </th>
           </tr>
         </thead>
 
-        <tbody>
+        <tbody className={styles.tableBody}>
           {/* Terrestrial Planets */}
-          <tr>
-            <th scope='rowgroup' colSpan={2} rowSpan={4}>
+          <tr className={styles.dataRow}>
+            <th
+              className={styles.categoryCell}
+              scope='rowgroup'
+              colSpan={2}
+              rowSpan={4}
+            >
               Terrestrial Planets
             </th>
-            <th scope='row'>Mercury</th>
-            <td>0.330</td>
-            <td>4,879</td>
-            <td>5429</td>
-            <td>3.7</td>
+            <th className={styles.planetName} scope='row'>
+              Mercury
+            </th>
+            <td className={styles.dataCell}>0.330</td>
+            <td className={styles.dataCell}>4,879</td>
+            <td className={styles.dataCell}>5429</td>
+            <td className={styles.dataCell}>3.7</td>
           </tr>
 
-          <tr>
-            <th scope='row'>Venus</th>
-            <td>4.87</td>
-            <td>12,104</td>
-            <td>5243</td>
-            <td>8.9</td>
+          <tr className={styles.dataRow}>
+            <th className={styles.planetName} scope='row'>
+              Venus
+            </th>
+            <td className={styles.dataCell}>4.87</td>
+            <td className={styles.dataCell}>12,104</td>
+            <td className={styles.dataCell}>5243</td>
+            <td className={styles.dataCell}>8.9</td>
           </tr>
 
-          <tr>
-            <th scope='row'>Earth</th>
-            <td>5.97</td>
-            <td>12,756</td>
-            <td>5514</td>
-            <td>9.8</td>
+          <tr className={styles.dataRow}>
+            <th className={styles.planetName} scope='row'>
+              Earth
+            </th>
+            <td className={styles.dataCell}>5.97</td>
+            <td className={styles.dataCell}>12,756</td>
+            <td className={styles.dataCell}>5514</td>
+            <td className={styles.dataCell}>9.8</td>
           </tr>
 
-          <tr>
-            <th scope='row'>Mars</th>
-            <td>0.642</td>
-            <td>6,792</td>
-            <td>3934</td>
-            <td>3.7</td>
+          <tr className={styles.dataRow}>
+            <th className={styles.planetName} scope='row'>
+              Mars
+            </th>
+            <td className={styles.dataCell}>0.642</td>
+            <td className={styles.dataCell}>6,792</td>
+            <td className={styles.dataCell}>3934</td>
+            <td className={styles.dataCell}>3.7</td>
           </tr>
 
           {/* Jovian Planets */}
-          <tr>
-            <th scope='rowgroup' rowSpan={4}>
+          <tr className={styles.dataRow}>
+            <th className={styles.categoryCell} scope='rowgroup' rowSpan={4}>
               Jovian Planets
             </th>
-            <th scope='rowgroup' rowSpan={2}>
+            <th className={styles.subCategoryCell} scope='rowgroup' rowSpan={2}>
               Gas Giants
             </th>
-            <th scope='row'>Jupiter</th>
-            <td>1898</td>
-            <td>142,984</td>
-            <td>1326</td>
-            <td>23.1</td>
+            <th className={styles.planetName} scope='row'>
+              Jupiter
+            </th>
+            <td className={styles.dataCell}>1898</td>
+            <td className={styles.dataCell}>142,984</td>
+            <td className={styles.dataCell}>1326</td>
+            <td className={styles.dataCell}>23.1</td>
           </tr>
 
-          <tr>
-            <th scope='row'>Saturn</th>
-            <td>568</td>
-            <td>120,536</td>
-            <td>687</td>
-            <td>9.0</td>
+          <tr className={styles.dataRow}>
+            <th className={styles.planetName} scope='row'>
+              Saturn
+            </th>
+            <td className={styles.dataCell}>568</td>
+            <td className={styles.dataCell}>120,536</td>
+            <td className={styles.dataCell}>687</td>
+            <td className={styles.dataCell}>9.0</td>
           </tr>
 
-          <tr>
-            <th scope='rowgroup' rowSpan={2}>
+          <tr className={styles.dataRow}>
+            <th className={styles.subCategoryCell} scope='rowgroup' rowSpan={2}>
               Ice Giants
             </th>
-            <th scope='row'>Uranus</th>
-            <td>86.8</td>
-            <td>51,118</td>
-            <td>1271</td>
-            <td>8.7</td>
+            <th className={styles.planetName} scope='row'>
+              Uranus
+            </th>
+            <td className={styles.dataCell}>86.8</td>
+            <td className={styles.dataCell}>51,118</td>
+            <td className={styles.dataCell}>1271</td>
+            <td className={styles.dataCell}>8.7</td>
           </tr>
 
-          <tr>
-            <th scope='row'>Neptune</th>
-            <td>102</td>
-            <td>49,528</td>
-            <td>1638</td>
-            <td>11.0</td>
+          <tr className={styles.dataRow}>
+            <th className={styles.planetName} scope='row'>
+              Neptune
+            </th>
+            <td className={styles.dataCell}>102</td>
+            <td className={styles.dataCell}>49,528</td>
+            <td className={styles.dataCell}>1638</td>
+            <td className={styles.dataCell}>11.0</td>
           </tr>
 
-          {/* Dwarf Planet */}
-          <tr>
-            <th scope='rowgroup' colSpan={2}>
+          {/* Dwarf Planets */}
+          <tr className={styles.dataRow}>
+            <th className={styles.categoryCell} scope='rowgroup' colSpan={2}>
               Dwarf Planets
             </th>
-            <th scope='row'>Pluto</th>
-            <td>0.0146</td>
-            <td>2,377</td>
-            <td>1850</td>
-            <td>0.7</td>
+            <th className={styles.planetName} scope='row'>
+              Pluto
+            </th>
+            <td className={styles.dataCell}>0.0146</td>
+            <td className={styles.dataCell}>2,377</td>
+            <td className={styles.dataCell}>1850</td>
+            <td className={styles.dataCell}>0.7</td>
           </tr>
         </tbody>
       </table>
