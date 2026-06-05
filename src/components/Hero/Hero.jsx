@@ -13,10 +13,10 @@ const Hero = () => {
         />
       </header>
       <section className={styles.heroSection}>
-        <div>
+        <div className={styles.mainSection}>
           <h1>
-            Explore Our Solar System <br />
-            Through Data
+            Explore Our Solar
+            <br /> System Through Data
           </h1>
 
           <p>
@@ -25,9 +25,28 @@ const Hero = () => {
             <br /> breaks down the solar system in a clear, data-driven way.
           </p>
 
-          <nav className='cta-container'>
-            <a href='#table-section'>Explore the Data</a>
-            <a href='#form-section'>Contact Us</a>
+          <nav className={styles.ctaContainer}>
+            <button
+              onClick={() =>
+                document
+                  .querySelector('#table-section')
+                  ?.scrollIntoView({ behavior: 'smooth' })
+              }
+              className={styles.explore}
+            >
+              Explore the Data
+            </button>
+
+            <button
+              onClick={() =>
+                document
+                  .querySelector('#form-section')
+                  ?.scrollIntoView({ behavior: 'smooth' })
+              }
+              className={styles.contactUs}
+            >
+              Contact Us
+            </button>
           </nav>
         </div>
 
