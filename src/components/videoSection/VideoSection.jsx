@@ -31,7 +31,7 @@ const VideoSection = () => {
         </div>
 
         <div className={styles.mainContent}>
-          <h2>How Planetary Data Helps Us Understand Space</h2>
+          <h3>How Planetary Data Helps Us Understand Space</h3>
 
           <p>
             Planetary science goes beyond images. Comparing <span>mass</span>,{' '}
