@@ -32,20 +32,6 @@ This application recreates the provided Phoenix Cohort Figma design as a fully f
 - Git & GitHub
 - Vercel / Netlify (Deployment)
 
-## API & External Resources
-
-### Planet Data API
-
-```text
-https://anurella.github.io/json/planets.json
-```
-
-### Form Submission Endpoint
-
-```text
-https://whitebricks.com/tsacademy.php
-```
-
 ### Design Reference
 
 ```text
