@@ -1,15 +1,15 @@
-import styles from './Hero.module.css';
+import styles from "./Hero.module.css";
 
 const Hero = () => {
   return (
     <>
       <header className={styles.header}>
         <img
-          src='src/assets/icons/headerIcon.svg'
-          alt='Company Logo'
+          src="src/assets/icons/headerIcon.svg"
+          alt="Company Logo"
           width={121}
           height={52}
-          loading='lazy'
+          loading="lazy"
         />
       </header>
       <section className={styles.heroSection}>
@@ -29,8 +29,8 @@ const Hero = () => {
             <button
               onClick={() =>
                 document
-                  .querySelector('#table-section')
-                  ?.scrollIntoView({ behavior: 'smooth' })
+                  .querySelector("#table-section")
+                  ?.scrollIntoView({ behavior: "smooth" })
               }
               className={styles.explore}
             >
@@ -40,8 +40,8 @@ const Hero = () => {
             <button
               onClick={() =>
                 document
-                  .querySelector('#form-section')
-                  ?.scrollIntoView({ behavior: 'smooth' })
+                  .querySelector("#form-section")
+                  ?.scrollIntoView({ behavior: "smooth" })
               }
               className={styles.contactUs}
             >
@@ -52,11 +52,11 @@ const Hero = () => {
 
         <div className={styles.heroimg}>
           <img
-            src='src/assets/heroGlobe.svg'
-            alt='Planet'
+            src="src/assets/heroGlobe.svg"
+            alt="Planet"
             width={644}
             height={644}
-            loading='lazy'
+            loading="lazy"
           />
         </div>
       </section>
