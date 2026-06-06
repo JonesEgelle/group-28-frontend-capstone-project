@@ -1,0 +1,145 @@
+.heroSection {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 100px;
+
+  background-color: #051540;
+}
+.heroSection h1 {
+  color: #ffffff;
+  font-size: 48px;
+
+  font-weight: 700;
+}
+.heroSection p {
+  color: #dddddd;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.heroSection nav {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  background-color: #051540;
+  padding: 20px 100px;
+}
+.mainSection {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.ctaContainer .explore {
+  min-width: 160.5px;
+  height: 44px;
+  padding: 20px 20px;
+  border: none;
+  border-radius: 8px;
+  background: #164baf;
+  color: #dddddd;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 16px;
+}
+.ctaContainer .contactUs {
+  min-width: 160.5px;
+  background-color: transparent;
+  height: 44px;
+  padding: 20px 20px;
+  border: 0.5px solid #dddddd;
+  border-radius: 8px;
+  color: #dddddd;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.ctaContainer button:hover {
+  background: #183f91;
+}
+
+.ctaContainer button:active {
+  transform: translateY(1px);
+}
+
+/* Mobile breakpoint */
+@media (max-width: 768px) {
+  .header {
+    padding: 16px 24px;
+    justify-content: center;
+  }
+
+  .heroSection {
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 25px;
+    text-align: center;
+  }
+
+  .heroSection h1 {
+    font-size: 32px;
+  }
+
+  .heroSection p {
+    font-size: 18px;
+
+    line-height: 1.6;
+    text-align: center;
+    letter-spacing: -2%;
+    font-weight: 500;
+  }
+
+  .heroSection nav {
+    flex-direction: row;
+    gap: 12px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .mainSection {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .ctaContainer .explore,
+  .ctaContainer .contactUs {
+    min-width: 140px;
+    font-size: 15px;
+  }
+
+  .header img {
+    width: 121px;
+    height: 52px;
+  }
+
+  .heroimg {
+    order: -1;
+  }
+  .heroimg img {
+    width: 299px;
+    height: 299px;
+  }
+  .heroSection br {
+    display: none;
+  }
+}

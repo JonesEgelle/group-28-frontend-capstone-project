@@ -36,7 +36,6 @@ const VideoSection = () => {
             loop
             playsInline
             controls
-            download='false'
             >
             <source
               src='https://videotourl.com/videos/1775122754836-288be386-cff3-4e87-abe9-4d5ca47a81ba.mp4'
@@ -52,7 +51,7 @@ const VideoSection = () => {
           <p>
             Planetary science goes beyond images. Comparing <span>mass</span>,{' '}
             <span>diameter</span>, <span>gravity</span>, and{' '}
-            <span>density</span>, we gain insight into how planets form, behave,
+            <span>density</span>, we gain insight into how planets form, behave
             and interact within the solar system.
           </p>
         </div>
