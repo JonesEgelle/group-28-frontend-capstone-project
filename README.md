@@ -32,13 +32,6 @@ This application recreates the provided Phoenix Cohort Figma design as a fully f
 - Git & GitHub
 - Vercel / Netlify (Deployment)
 
-
-### Form Submission Endpoint
-
-```text
-https://whitebricks.com/tsacademy.php
-```
-
 ### Design Reference
 
 ```text
