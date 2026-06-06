@@ -18,7 +18,7 @@ const Footer = () => {
               <a href='#'>kenneth</a>
             </li>
             <li>
-              <a href='#'>Ayoad</a>
+              <a href='#'>Ayoade</a>
             </li>
             <li>
               <a href='#'>Sweetness</a>
