@@ -36,7 +36,13 @@
   font-size: 16px;
   font-weight: 600;
 }
+ul {
+  display: flex;
+  gap: 20px;
+  list-style-type: none;
+}
 
+/* Mobile breakpoint */
 @media (max-width: 768px) {
   .footerSection {
     padding: 20px;
