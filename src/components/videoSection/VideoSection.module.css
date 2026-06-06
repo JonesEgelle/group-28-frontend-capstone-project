@@ -36,6 +36,7 @@
   background-color: #1f1f20;
 }
 
+/* Mobile breakpoint */
 @media (max-width: 768px) {
   .videoSection {
     flex-direction: column;

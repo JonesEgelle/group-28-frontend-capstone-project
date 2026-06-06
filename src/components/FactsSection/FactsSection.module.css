@@ -119,7 +119,7 @@
   border-bottom-right-radius: 16px;
 }
 
-/* Responsive */
+/* Mobile breakpoint */
 @media (max-width: 1024px) {
   .tableTitle {
     font-size: 1.5rem;

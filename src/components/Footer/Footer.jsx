@@ -6,20 +6,29 @@ const Footer = () => {
       <footer className={styles.footerSection}>
         <section className={styles.footerMain}>
           <h3>About</h3>
-          <p>first name of group members</p>
+
           <ul>
-            {/* <li>
-              <a href='#'>Planetary Facts</a>
-            </li> */}
-            {/* <li>
-              <a href='#'>Gallery</a>
+            <li>
+              <a href='#'>Jones</a>
             </li>
             <li>
-              <a href='#'>World Records</a>
+              <a href='#'>Jade</a>
             </li>
             <li>
-              <a href='#'>Guides</a>
-            </li> */}
+              <a href='#'>kenneth</a>
+            </li>
+            <li>
+              <a href='#'>Ayoad</a>
+            </li>
+            <li>
+              <a href='#'>Sweetness</a>
+            </li>
+            <li>
+              <a href='#'>Samuel </a>
+            </li>
+            <li>
+              <a href='#'> Progress</a>
+            </li>
           </ul>
         </section>
 
@@ -32,7 +41,11 @@ const Footer = () => {
               &nbsp;& &nbsp;
               <a href='https://www.linkedin.com/in/ifeomaokocha/'>Ifeoma A</a>.
               <br />
-              Built by Group 28. All rights reserved
+              Built by{' '}
+              <a href='https://github.com/JonesEgelle/group-28-frontend-capstone-project.git'>
+                Group 28
+              </a>
+              . All rights reserved
             </p>
           </div>
 

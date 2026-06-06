@@ -61,6 +61,7 @@ figcaption {
   margin-top: 3rem;
 }
 
+/* Mobile breakpoint */
 @media (max-width: 768px) {
   .planetSection {
     padding: 40px 24px;
