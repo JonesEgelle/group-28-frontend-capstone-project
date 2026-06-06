@@ -1,5 +1,5 @@
-import React from 'react';
-import styles from './Footer.module.css';
+import React from "react";
+import styles from "./Footer.module.css";
 const Footer = () => {
   return (
     <>
@@ -28,15 +28,15 @@ const Footer = () => {
         <section className={styles.tandc}>
           <div>
             <p>
-              &copy; 2026 Design by <a href='https://amakandukwu.com/'>Amaka</a>
+              &copy; 2026 Design by <a href="https://amakandukwu.com/">Amaka</a>
               &nbsp;& &nbsp;
-              <a href='https://www.linkedin.com/in/ifeomaokocha/'>Ifeoma A</a>.
+              <a href="https://www.linkedin.com/in/ifeomaokocha/">Ifeoma A</a>.
               <br />
               Built by Group 28. All rights reserved
             </p>
           </div>
 
-          <a href='https://tsacademyonline.com/'>TSAcademy</a>
+          <a href="https://tsacademyonline.com/">TSAcademy</a>
         </section>
       </footer>
     </>
