@@ -5,11 +5,11 @@ const Hero = () => {
     <>
       <header className={styles.header}>
         <img
-          src='src/assets/icons/graphics.png'
+          src='assets/icons/headerIcon.svg'
           alt='Company Logo'
           width={121}
           height={52}
-          loading='lazy'
+          // loading='lazy'
         />
       </header>
       <section className={styles.heroSection}>
@@ -52,7 +52,7 @@ const Hero = () => {
 
         <div className={styles.heroimg}>
           <img
-            src='src/assets/heroGlobe.png'
+            src='assets/heroGlobe.svg'
             alt='Planet'
             width={644}
             height={644}
