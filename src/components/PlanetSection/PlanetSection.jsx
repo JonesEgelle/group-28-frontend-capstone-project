@@ -17,7 +17,7 @@ const PlanetSection = () => {
   return (
     <>
       {/* Planet Section */}
-      <section className={styles.planetSection}>
+      <section id='planet-section' className={styles.planetSection}>
         <div className={styles.mainContent}>
           <h2>Visualizing the Differences Between Planets</h2>
 

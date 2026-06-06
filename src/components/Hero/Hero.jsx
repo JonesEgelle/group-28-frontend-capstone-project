@@ -29,7 +29,7 @@ const Hero = () => {
             <button
               onClick={() =>
                 document
-                  .querySelector('#table-section')
+                  .querySelector('#planet-section')
                   ?.scrollIntoView({ behavior: 'smooth' })
               }
               className={styles.explore}

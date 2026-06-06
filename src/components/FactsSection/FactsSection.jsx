@@ -1,12 +1,12 @@
-import React from "react";
-import FactsTable from "./FactsTable";
-import styles from "./FactsSection.module.css";
+import React from 'react';
+import FactsTable from './FactsTable';
+import styles from './FactsSection.module.css';
 
 const FactsSection = () => {
   return (
     <>
       {/* Table Section */}
-      <section id="table-section" className={styles.factsSection}>
+      <section className={styles.factsSection}>
         <div className={styles.header}>
           <h2>Planetary Facts at a Glance</h2>
 
