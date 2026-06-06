@@ -1,5 +1,5 @@
 import React from 'react';
-
+// show planets
 export const PlanetCard = ({ planet }) => {
   return (
     <>
